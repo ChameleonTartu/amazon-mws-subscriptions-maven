@@ -34,3 +34,12 @@ In case you want to have the latest updates you can specify `version` as `master
     <version>master-SNAPSHOT</version>
 </dependency>
 ```
+
+# Inspiration
+
+This project was inspired by [ext-lib-amazon-mws-products](https://github.com/trifonnt/ext-lib-amazon-mws-products)
+
+# Project supporter
+
+This project was supported by ![](https://hiccasoft.io/static/img/hiccasoft_new.png)
+
