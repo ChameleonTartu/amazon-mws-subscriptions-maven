@@ -1,7 +1,7 @@
 # ext-lib-amazon-mws-subscriptions
 Mavenized version of Amazon MWS Subscription API
 
-![Release](https://jitpack.io/v/ChameleonTartu/ext-lib-amazon-mws-subscriptions.svg)
+[![](https://jitpack.io/v/ChameleonTartu/ext-lib-amazon-mws-subscriptions.svg)](https://jitpack.io/#ChameleonTartu/ext-lib-amazon-mws-subscriptions)
 
 # How to use into Maven (pom.xml)
 
