@@ -1,8 +1,8 @@
 # ext-lib-amazon-mws-subscriptions
 Mavenized version of Amazon MWS Subscription API
 
-[![](https://jitpack.io/v/ChameleonTartu/ext-lib-amazon-mws-subscriptions.svg)](https://jitpack.io/#ChameleonTartu/ext-lib-amazon-mws-subscriptions)
-[![](https://travis-ci.org/ChameleonTartu/ext-lib-amazon-mws-subscriptions.svg?branch=master)](https://travis-ci.org/travis-ci/travis-web)
+[![](https://jitpack.io/v/ChameleonTartu/amazon-mws-subscriptions-maven.svg)](https://jitpack.io/#ChameleonTartu/amazon-mws-subscriptions-maven)
+[![](https://travis-ci.org/ChameleonTartu/amazon-mws-subscriptions-maven.svg?branch=master)](https://travis-ci.org/travis-ci/travis-web)
 
 
 # How to use into Maven (pom.xml)
@@ -23,8 +23,8 @@ Dependency itself:
 ```
 <dependency>
     <groupId>com.github.chameleontartu</groupId>
-    <artifactId>ext-lib-amazon-mws-subscriptions</artifactId>
-    <version>v1.0.0</version>
+    <artifactId>amazon-mws-subscriptions-maven</artifactId>
+    <version>1.0.0</version>
 </dependency>
 ```
 
@@ -32,7 +32,7 @@ In case you want to have the latest updates you can specify `version` as `master
 ```
 <dependency>
     <groupId>com.github.chameleontartu</groupId>
-    <artifactId>ext-lib-amazon-mws-subscriptions</artifactId>
+    <artifactId>amazon-mws-subscriptions-maven</artifactId>
     <version>master-SNAPSHOT</version>
 </dependency>
 ```

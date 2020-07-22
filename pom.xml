@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.chameleontartu</groupId>
-	<artifactId>ext-lib-amazon-mws-subscriptions</artifactId>
+	<artifactId>amazon-mws-subscriptions-maven</artifactId>
 	<version>master-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Amazon MWS :: Subscriptions</name>
@@ -38,9 +38,9 @@
 	</developers>
 
 	<scm>
-		<connection>scm:git:git@github.com:ChameleonTartu/ext-lib-amazon-mws-subscriptions.git</connection>
-		<developerConnection>scm:git:git@github.com:ChameleonTartu/ext-lib-amazon-mws-subscriptions.git</developerConnection>
-		<url>https://github.com/ChameleonTartu/ext-lib-amazon-mws-subscriptions/tree/master</url>
+		<connection>scm:git:git@github.com:ChameleonTartu/amazon-mws-subscriptions-maven.git</connection>
+		<developerConnection>scm:git:git@github.com:ChameleonTartu/amazon-mws-subscriptions-maven.git</developerConnection>
+		<url>https://github.com/ChameleonTartu/amazon-mws-subscriptions-maven/tree/master</url>
 	</scm>
 
 	<prerequisites>
@@ -104,6 +104,7 @@
 			<version>${org-apache-httpcomponents-version}</version>
 		</dependency>
 
+		<!-- TODO: Re-brand it and put it under the same cover -->
 		<dependency>
 			<groupId>com.github.trifonnt</groupId>
 			<artifactId>ext-lib-amazon-mws-client-runtime</artifactId>
@@ -314,7 +315,4 @@
 			<url>file://${project.build.directory}/mvn-repo</url>
 		</repository>
 	</distributionManagement>
-
-	<!-- Finalize resolution of dependencies in here -->
-
 </project>
