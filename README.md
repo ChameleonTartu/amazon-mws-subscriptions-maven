@@ -1,4 +1,4 @@
-# ext-lib-amazon-mws-subscriptions
+# amazon-mws-subscriptions-maven
 Mavenized version of Amazon MWS Subscription API
 
 [![](https://jitpack.io/v/ChameleonTartu/amazon-mws-subscriptions-maven.svg)](https://jitpack.io/#ChameleonTartu/amazon-mws-subscriptions-maven)
