@@ -71,7 +71,6 @@ public class ListRegisteredDestinationsResult extends AbstractMwsObject {
      *
      * @param destinationList
      *             The new value to set.
-     *
      * @return This instance.
      */
     public ListRegisteredDestinationsResult withDestinationList(DestinationList destinationList) {
@@ -80,10 +79,9 @@ public class ListRegisteredDestinationsResult extends AbstractMwsObject {
     }
 
     /**
-     * Read members from a MwsReader.
+     * {@inheritDoc}
      *
-     * @param r
-     *      The reader to read from.
+     * Read members from a MwsReader.
      */
     @Override
     public void readFragmentFrom(MwsReader r) {
@@ -91,10 +89,9 @@ public class ListRegisteredDestinationsResult extends AbstractMwsObject {
     }
 
     /**
-     * Write members to a MwsWriter.
+     * {@inheritDoc}
      *
-     * @param w
-     *      The writer to write to.
+     * Write members to a MwsWriter.
      */
     @Override
     public void writeFragmentTo(MwsWriter w) {
@@ -102,23 +99,28 @@ public class ListRegisteredDestinationsResult extends AbstractMwsObject {
     }
 
     /**
-     * Write tag, xmlns and members to a MwsWriter.
+     * {@inheritDoc}
      *
-     * @param w
-     *         The Writer to write to.
+     * Write tag, xmlns and members to a MwsWriter.
      */
     @Override
     public void writeTo(MwsWriter w) {
         w.write("http://mws.amazonservices.com/schema/Subscriptions/2013-07-01", "ListRegisteredDestinationsResult",this);
     }
 
-    /** Value constructor. */
+    /**
+     * Value constructor.
+     *
+     * @param destinationList a {@link com.amazonservices.mws.subscriptions.model.DestinationList} object.
+     */
     public ListRegisteredDestinationsResult(DestinationList destinationList) {
         this.destinationList = destinationList;
     }    
     
 
-    /** Default constructor. */
+    /**
+     * Default constructor.
+     */
     public ListRegisteredDestinationsResult() {
         super();
     }

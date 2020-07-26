@@ -27,6 +27,7 @@ public class MWSSubscriptionsServiceException extends MwsException {
     /** For serialization. */
     private static final long serialVersionUID = 1L;
 
+    /** {@inheritDoc} */
     @Override
     public ResponseHeaderMetadata getResponseHeaderMetadata() {
         MwsResponseHeaderMetadata baseRHMD = super.getResponseHeaderMetadata();
@@ -37,32 +38,80 @@ public class MWSSubscriptionsServiceException extends MwsException {
         }
     }
 
+    /**
+     * <p>setResponseHeaderMetadata.</p>
+     *
+     * @param rhmd a {@link com.amazonservices.mws.subscriptions.model.ResponseHeaderMetadata} object.
+     */
     public void setResponseHeaderMetadata(ResponseHeaderMetadata rhmd) {
         super.setResponseHeaderMetadata(rhmd);
     }
 
+    /**
+     * <p>Constructor for MWSSubscriptionsServiceException.</p>
+     *
+     * @param message a {@link java.lang.String} object.
+     */
     public MWSSubscriptionsServiceException(String message) {
         super(0, message, null);
     }
 
+    /**
+     * <p>Constructor for MWSSubscriptionsServiceException.</p>
+     *
+     * @param message a {@link java.lang.String} object.
+     * @param statusCode a int.
+     */
     public MWSSubscriptionsServiceException(String message, int statusCode) {
         super(statusCode, message, null);
     }
 
+    /**
+     * <p>Constructor for MWSSubscriptionsServiceException.</p>
+     *
+     * @param t a {@link java.lang.Throwable} object.
+     */
     public MWSSubscriptionsServiceException(Throwable t) {
         super(0, null, t);
     }
 
+    /**
+     * <p>Constructor for MWSSubscriptionsServiceException.</p>
+     *
+     * @param message a {@link java.lang.String} object.
+     * @param t a {@link java.lang.Throwable} object.
+     */
     public MWSSubscriptionsServiceException(String message, Throwable t) {
         super(0, message, t);
     }
 
+    /**
+     * <p>Constructor for MWSSubscriptionsServiceException.</p>
+     *
+     * @param message a {@link java.lang.String} object.
+     * @param statusCode a int.
+     * @param errorCode a {@link java.lang.String} object.
+     * @param errorType a {@link java.lang.String} object.
+     * @param requestId a {@link java.lang.String} object.
+     * @param xml a {@link java.lang.String} object.
+     * @param rhmd a {@link com.amazonservices.mws.subscriptions.model.ResponseHeaderMetadata} object.
+     */
     public MWSSubscriptionsServiceException(String message, int statusCode, 
          String errorCode, String errorType, String requestId,
          String xml, ResponseHeaderMetadata rhmd) {
         super(statusCode, message, errorCode, errorType, xml, rhmd);
     }
 
+    /**
+     * <p>Constructor for MWSSubscriptionsServiceException.</p>
+     *
+     * @param message a {@link java.lang.String} object.
+     * @param statusCode a int.
+     * @param errorCode a {@link java.lang.String} object.
+     * @param errorType a {@link java.lang.String} object.
+     * @param requestId a {@link java.lang.String} object.
+     * @param xml a {@link java.lang.String} object.
+     */
     public MWSSubscriptionsServiceException(String message, int statusCode, 
          String errorCode, String errorType, String requestId,
          String xml) {

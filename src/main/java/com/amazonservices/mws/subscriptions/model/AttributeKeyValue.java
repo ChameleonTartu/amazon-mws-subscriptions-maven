@@ -74,7 +74,6 @@ public class AttributeKeyValue extends AbstractMwsObject {
      *
      * @param key
      *             The new value to set.
-     *
      * @return This instance.
      */
     public AttributeKeyValue withKey(String key) {
@@ -115,7 +114,6 @@ public class AttributeKeyValue extends AbstractMwsObject {
      *
      * @param value
      *             The new value to set.
-     *
      * @return This instance.
      */
     public AttributeKeyValue withValue(String value) {
@@ -124,10 +122,9 @@ public class AttributeKeyValue extends AbstractMwsObject {
     }
 
     /**
-     * Read members from a MwsReader.
+     * {@inheritDoc}
      *
-     * @param r
-     *      The reader to read from.
+     * Read members from a MwsReader.
      */
     @Override
     public void readFragmentFrom(MwsReader r) {
@@ -136,10 +133,9 @@ public class AttributeKeyValue extends AbstractMwsObject {
     }
 
     /**
-     * Write members to a MwsWriter.
+     * {@inheritDoc}
      *
-     * @param w
-     *      The writer to write to.
+     * Write members to a MwsWriter.
      */
     @Override
     public void writeFragmentTo(MwsWriter w) {
@@ -148,24 +144,30 @@ public class AttributeKeyValue extends AbstractMwsObject {
     }
 
     /**
-     * Write tag, xmlns and members to a MwsWriter.
+     * {@inheritDoc}
      *
-     * @param w
-     *         The Writer to write to.
+     * Write tag, xmlns and members to a MwsWriter.
      */
     @Override
     public void writeTo(MwsWriter w) {
         w.write("http://mws.amazonservices.com/schema/Subscriptions/2013-07-01", "AttributeKeyValue",this);
     }
 
-    /** Value constructor. */
+    /**
+     * Value constructor.
+     *
+     * @param key a {@link java.lang.String} object.
+     * @param value a {@link java.lang.String} object.
+     */
     public AttributeKeyValue(String key,String value) {
         this.key = key;
         this.value = value;
     }    
     
 
-    /** Default constructor. */
+    /**
+     * Default constructor.
+     */
     public AttributeKeyValue() {
         super();
     }

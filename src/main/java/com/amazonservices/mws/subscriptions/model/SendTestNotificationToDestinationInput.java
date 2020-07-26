@@ -80,7 +80,6 @@ public class SendTestNotificationToDestinationInput extends AbstractMwsObject {
      *
      * @param sellerId
      *             The new value to set.
-     *
      * @return This instance.
      */
     public SendTestNotificationToDestinationInput withSellerId(String sellerId) {
@@ -121,7 +120,6 @@ public class SendTestNotificationToDestinationInput extends AbstractMwsObject {
      *
      * @param mwsAuthToken
      *             The new value to set.
-     *
      * @return This instance.
      */
     public SendTestNotificationToDestinationInput withMWSAuthToken(String mwsAuthToken) {
@@ -162,7 +160,6 @@ public class SendTestNotificationToDestinationInput extends AbstractMwsObject {
      *
      * @param marketplaceId
      *             The new value to set.
-     *
      * @return This instance.
      */
     public SendTestNotificationToDestinationInput withMarketplaceId(String marketplaceId) {
@@ -203,7 +200,6 @@ public class SendTestNotificationToDestinationInput extends AbstractMwsObject {
      *
      * @param destination
      *             The new value to set.
-     *
      * @return This instance.
      */
     public SendTestNotificationToDestinationInput withDestination(Destination destination) {
@@ -212,10 +208,9 @@ public class SendTestNotificationToDestinationInput extends AbstractMwsObject {
     }
 
     /**
-     * Read members from a MwsReader.
+     * {@inheritDoc}
      *
-     * @param r
-     *      The reader to read from.
+     * Read members from a MwsReader.
      */
     @Override
     public void readFragmentFrom(MwsReader r) {
@@ -226,10 +221,9 @@ public class SendTestNotificationToDestinationInput extends AbstractMwsObject {
     }
 
     /**
-     * Write members to a MwsWriter.
+     * {@inheritDoc}
      *
-     * @param w
-     *      The writer to write to.
+     * Write members to a MwsWriter.
      */
     @Override
     public void writeFragmentTo(MwsWriter w) {
@@ -240,17 +234,23 @@ public class SendTestNotificationToDestinationInput extends AbstractMwsObject {
     }
 
     /**
-     * Write tag, xmlns and members to a MwsWriter.
+     * {@inheritDoc}
      *
-     * @param w
-     *         The Writer to write to.
+     * Write tag, xmlns and members to a MwsWriter.
      */
     @Override
     public void writeTo(MwsWriter w) {
         w.write("http://mws.amazonservices.com/schema/Subscriptions/2013-07-01", "SendTestNotificationToDestinationInput",this);
     }
 
-    /** Value constructor. */
+    /**
+     * Value constructor.
+     *
+     * @param sellerId a {@link java.lang.String} object.
+     * @param mwsAuthToken a {@link java.lang.String} object.
+     * @param marketplaceId a {@link java.lang.String} object.
+     * @param destination a {@link com.amazonservices.mws.subscriptions.model.Destination} object.
+     */
     public SendTestNotificationToDestinationInput(String sellerId,String mwsAuthToken,String marketplaceId,Destination destination) {
         this.sellerId = sellerId;
         this.mwsAuthToken = mwsAuthToken;
@@ -258,7 +258,13 @@ public class SendTestNotificationToDestinationInput extends AbstractMwsObject {
         this.destination = destination;
     }    
 
-    /** Legacy value constructor. */
+    /**
+     * Legacy value constructor.
+     *
+     * @param sellerId a {@link java.lang.String} object.
+     * @param marketplaceId a {@link java.lang.String} object.
+     * @param destination a {@link com.amazonservices.mws.subscriptions.model.Destination} object.
+     */
     public SendTestNotificationToDestinationInput(String sellerId,String marketplaceId,Destination destination) {
         this.sellerId = sellerId;
         this.marketplaceId = marketplaceId;
@@ -266,7 +272,9 @@ public class SendTestNotificationToDestinationInput extends AbstractMwsObject {
     }
     
 
-    /** Default constructor. */
+    /**
+     * Default constructor.
+     */
     public SendTestNotificationToDestinationInput() {
         super();
     }

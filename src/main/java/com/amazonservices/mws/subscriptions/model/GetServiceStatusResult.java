@@ -76,7 +76,6 @@ public class GetServiceStatusResult extends AbstractMwsObject {
      *
      * @param status
      *             The new value to set.
-     *
      * @return This instance.
      */
     public GetServiceStatusResult withStatus(String status) {
@@ -117,7 +116,6 @@ public class GetServiceStatusResult extends AbstractMwsObject {
      *
      * @param timestamp
      *             The new value to set.
-     *
      * @return This instance.
      */
     public GetServiceStatusResult withTimestamp(XMLGregorianCalendar timestamp) {
@@ -126,10 +124,9 @@ public class GetServiceStatusResult extends AbstractMwsObject {
     }
 
     /**
-     * Read members from a MwsReader.
+     * {@inheritDoc}
      *
-     * @param r
-     *      The reader to read from.
+     * Read members from a MwsReader.
      */
     @Override
     public void readFragmentFrom(MwsReader r) {
@@ -138,10 +135,9 @@ public class GetServiceStatusResult extends AbstractMwsObject {
     }
 
     /**
-     * Write members to a MwsWriter.
+     * {@inheritDoc}
      *
-     * @param w
-     *      The writer to write to.
+     * Write members to a MwsWriter.
      */
     @Override
     public void writeFragmentTo(MwsWriter w) {
@@ -150,24 +146,30 @@ public class GetServiceStatusResult extends AbstractMwsObject {
     }
 
     /**
-     * Write tag, xmlns and members to a MwsWriter.
+     * {@inheritDoc}
      *
-     * @param w
-     *         The Writer to write to.
+     * Write tag, xmlns and members to a MwsWriter.
      */
     @Override
     public void writeTo(MwsWriter w) {
         w.write("http://mws.amazonservices.com/schema/Subscriptions/2013-07-01", "GetServiceStatusResult",this);
     }
 
-    /** Value constructor. */
+    /**
+     * Value constructor.
+     *
+     * @param status a {@link java.lang.String} object.
+     * @param timestamp a {@link javax.xml.datatype.XMLGregorianCalendar} object.
+     */
     public GetServiceStatusResult(String status,XMLGregorianCalendar timestamp) {
         this.status = status;
         this.timestamp = timestamp;
     }    
     
 
-    /** Default constructor. */
+    /**
+     * Default constructor.
+     */
     public GetServiceStatusResult() {
         super();
     }

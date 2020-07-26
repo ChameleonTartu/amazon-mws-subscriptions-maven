@@ -76,7 +76,6 @@ public class RegisterDestinationResponse extends AbstractMwsObject implements MW
      *
      * @param registerDestinationResult
      *             The new value to set.
-     *
      * @return This instance.
      */
     public RegisterDestinationResponse withRegisterDestinationResult(RegisterDestinationResult registerDestinationResult) {
@@ -117,7 +116,6 @@ public class RegisterDestinationResponse extends AbstractMwsObject implements MW
      *
      * @param responseMetadata
      *             The new value to set.
-     *
      * @return This instance.
      */
     public RegisterDestinationResponse withResponseMetadata(ResponseMetadata responseMetadata) {
@@ -135,10 +133,9 @@ public class RegisterDestinationResponse extends AbstractMwsObject implements MW
     }
 
     /**
-     * Set the value of ResponseHeaderMetadata.
+     * {@inheritDoc}
      *
-     * @param responseHeaderMetadata
-     *            The new value to set.
+     * Set the value of ResponseHeaderMetadata.
      */
     public void setResponseHeaderMetadata(ResponseHeaderMetadata responseHeaderMetadata) {
         this.responseHeaderMetadata = responseHeaderMetadata;
@@ -158,7 +155,6 @@ public class RegisterDestinationResponse extends AbstractMwsObject implements MW
      *
      * @param responseHeaderMetadata
      *             The new value to set.
-     *
      * @return This instance.
      */
     public RegisterDestinationResponse withResponseHeaderMetadata(ResponseHeaderMetadata responseHeaderMetadata) {
@@ -167,10 +163,9 @@ public class RegisterDestinationResponse extends AbstractMwsObject implements MW
     }
 
     /**
-     * Read members from a MwsReader.
+     * {@inheritDoc}
      *
-     * @param r
-     *      The reader to read from.
+     * Read members from a MwsReader.
      */
     @Override
     public void readFragmentFrom(MwsReader r) {
@@ -179,10 +174,9 @@ public class RegisterDestinationResponse extends AbstractMwsObject implements MW
     }
 
     /**
-     * Write members to a MwsWriter.
+     * {@inheritDoc}
      *
-     * @param w
-     *      The writer to write to.
+     * Write members to a MwsWriter.
      */
     @Override
     public void writeFragmentTo(MwsWriter w) {
@@ -191,24 +185,30 @@ public class RegisterDestinationResponse extends AbstractMwsObject implements MW
     }
 
     /**
-     * Write tag, xmlns and members to a MwsWriter.
+     * {@inheritDoc}
      *
-     * @param w
-     *         The Writer to write to.
+     * Write tag, xmlns and members to a MwsWriter.
      */
     @Override
     public void writeTo(MwsWriter w) {
         w.write("http://mws.amazonservices.com/schema/Subscriptions/2013-07-01", "RegisterDestinationResponse",this);
     }
 
-    /** Value constructor. */
+    /**
+     * Value constructor.
+     *
+     * @param registerDestinationResult a {@link com.amazonservices.mws.subscriptions.model.RegisterDestinationResult} object.
+     * @param responseMetadata a {@link com.amazonservices.mws.subscriptions.model.ResponseMetadata} object.
+     */
     public RegisterDestinationResponse(RegisterDestinationResult registerDestinationResult,ResponseMetadata responseMetadata) {
         this.registerDestinationResult = registerDestinationResult;
         this.responseMetadata = responseMetadata;
     }    
     
 
-    /** Default constructor. */
+    /**
+     * Default constructor.
+     */
     public RegisterDestinationResponse() {
         super();
     }

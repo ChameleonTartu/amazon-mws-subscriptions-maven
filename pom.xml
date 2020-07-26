@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.chameleontartu</groupId>
 	<artifactId>amazon-mws-subscriptions-maven</artifactId>
-	<version>master-SNAPSHOT</version>
+	<version>1.2.0</version>
 	<packaging>jar</packaging>
 	<name>Amazon MWS :: Subscriptions</name>
 	<description>Amazon MWS Subscriptions API Client Library</description>
@@ -43,10 +43,6 @@
 		<url>https://github.com/ChameleonTartu/amazon-mws-subscriptions-maven/tree/master</url>
 	</scm>
 
-	<prerequisites>
-		<maven>3.0.2</maven>
-	</prerequisites>
-
 	<properties>
 		<!-- Unify the encoding for all modules -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -55,22 +51,42 @@
 		<jdk.version>1.6</jdk.version>
 		<compiler.fork>1.6</compiler.fork>
 
-		<!-- 
-		  Turning off doclint in JDK 8 Javadoc
-		- http://blog.joda.org/2014/02/turning-off-doclint-in-jdk-8-javadoc.html
-		-->
-		<additionalparam>-Xdoclint:none</additionalparam>
+		<!-- Dependencies -->
 
-		<maven-bundle-version>2.3.7</maven-bundle-version>
+		<!-- TODO: Continue from here -->
+
 		<commons-codec-version>1.3</commons-codec-version>
-		<commons-httpclient-version>3.0.1</commons-httpclient-version>
-		<commons-logging-version>1.1</commons-logging-version>
-		<org-apache-httpcomponents-version>4.2</org-apache-httpcomponents-version>
-		<httpcore-version>4.2</httpcore-version>
-		<ext-lib-amazon-mws-client-runtime-version>1.0.2</ext-lib-amazon-mws-client-runtime-version>
+		<commons-httpclient.version>3.0.1</commons-httpclient.version>
+		<commons-logging-api.version>1.1</commons-logging-api.version>
+		<httpclient.version>4.2</httpclient.version>
+		<httpcore.version>4.2</httpcore.version>
+		<mockito.version>1.9.5</mockito.version>
+		<junit.version>4.11</junit.version>
+		<httpcore.version>4.4.13</httpcore.version>
 
-		<mockito-version>1.9.5</mockito-version>
-		<junit-version>4.11</junit-version>
+		<!-- Plugins -->
+		<maven-eclipse-plugin.version>2.10</maven-eclipse-plugin.version>
+		<maven-idea-plugin.version>2.2.1</maven-idea-plugin.version>
+
+
+		<maven-bundle-plugin.version>5.1.1</maven-bundle-plugin.version>
+		<maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
+		<maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
+		<maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+		<build-helper-maven-plugin.version>3.2.0</build-helper-maven-plugin.version>
+		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+		<maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
+		<maven-install-plugin.version>2.5.2</maven-install-plugin.version>
+		<maven-scm-provider-gitexe.version>1.11.2</maven-scm-provider-gitexe.version>
+		<nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
+		<maven-source-plugin.version>3.2.1</maven-source-plugin.version>
+		<maven-release-plugin.version>2.5.3</maven-release-plugin.version>
+		<maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
+		<versions-maven-plugin.version>2.7</versions-maven-plugin.version>
+
+		<!-- TODO: Fix 3rd party library -->
+		<ext-lib-amazon-mws-client-runtime.version>1.0.2</ext-lib-amazon-mws-client-runtime.version>
+
 	</properties>
 
 	<dependencies>
@@ -83,46 +99,53 @@
 		<dependency>
 			<groupId>commons-httpclient</groupId>
 			<artifactId>commons-httpclient</artifactId>
-			<version>${commons-httpclient-version}</version>
+			<version>${commons-httpclient.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>commons-logging</groupId>
 			<artifactId>commons-logging-api</artifactId>
-			<version>${commons-logging-version}</version>
+			<version>${commons-logging-api.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
-			<version>${org-apache-httpcomponents-version}</version>
+			<version>${httpclient.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpcore</artifactId>
-			<version>${org-apache-httpcomponents-version}</version>
+			<version>${httpcore.version}</version>
 		</dependency>
 
 		<!-- TODO: Re-brand it and put it under the same cover -->
 		<dependency>
 			<groupId>com.github.trifonnt</groupId>
 			<artifactId>ext-lib-amazon-mws-client-runtime</artifactId>
-			<version>${ext-lib-amazon-mws-client-runtime-version}</version>
+			<version>${ext-lib-amazon-mws-client-runtime.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-all</artifactId>
-			<version>${mockito-version}</version>
+			<version>${mockito.version}</version>
 			<scope>test</scope>
 		</dependency>
 
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>${junit-version}</version>
+			<version>${junit.version}</version>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>versions-maven-plugin</artifactId>
+			<version>${versions-maven-plugin.version}</version>
+			<type>maven-plugin</type>
 		</dependency>
 	</dependencies>
 
@@ -133,18 +156,18 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-assembly-plugin</artifactId>
-					<version>2.2</version>
+					<version>${maven-assembly-plugin.version}</version>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>build-helper-maven-plugin</artifactId>
-					<version>1.5</version>
+					<version>${build-helper-maven-plugin.version}</version>
 				</plugin>
 
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.5.1</version>
+					<version>${maven-compiler-plugin.version}</version>
 					<configuration>
 						<source>${jdk.version}</source>
 						<target>${jdk.version}</target>
@@ -156,7 +179,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-eclipse-plugin</artifactId>
-					<version>2.10</version>
+					<version>${maven-eclipse-plugin.version}</version>
 					<configuration>
 						<downloadSources>true</downloadSources>
 						<downloadJavadocs>false</downloadJavadocs>
@@ -166,7 +189,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-idea-plugin</artifactId>
-					<version>2.2</version>
+					<version>${maven-idea-plugin.version}</version>
 					<configuration>
 						<downloadSources>true</downloadSources>
 						<downloadJavadocs>false</downloadJavadocs>
@@ -176,30 +199,40 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-javadoc-plugin</artifactId>
-					<version>2.9.1</version>
+					<version>${maven-javadoc-plugin.version}</version>
 					<configuration>
 						<attach>true</attach>
 						<source>${jdk.version}</source>
 						<quiet>true</quiet>
 						<detectOfflineLinks>false</detectOfflineLinks>
-						<javadocVersion>1.8</javadocVersion>
 						<encoding>${project.build.sourceEncoding}</encoding>
 					</configuration>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-install-plugin</artifactId>
-					<version>2.3.1</version>
+					<version>${maven-install-plugin.version}</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.8</version>
+					<version>${maven-surefire-plugin.version}</version>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.felix</groupId>
 					<artifactId>maven-bundle-plugin</artifactId>
-					<version>2.3.7</version>
+					<version>${maven-bundle-plugin.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.sonatype.plugins</groupId>
+					<artifactId>nexus-staging-maven-plugin</artifactId>
+					<version>${nexus-staging-maven-plugin.version}</version>
+					<extensions>true</extensions>
+					<configuration>
+						<serverId>ossrh</serverId>
+						<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+						<autoReleaseAfterClose>true</autoReleaseAfterClose>
+					</configuration>
 				</plugin>
 			</plugins>
 		</pluginManagement>
@@ -219,7 +252,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
-				<version>3.0.1</version>
+				<version>${maven-source-plugin.version}</version>
 				<executions>
 					<execution>
 						<id>attach-sources</id>
@@ -232,11 +265,35 @@
 			</plugin>
 
 			<plugin>
-				<artifactId>maven-deploy-plugin</artifactId>
-				<version>2.8.1</version>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>${maven-release-plugin.version}</version>
 				<configuration>
-					<altDeploymentRepository>internal.repo::default::file://${project.build.directory}/mvn-repo</altDeploymentRepository>
+					<localCheckout>true</localCheckout>
+					<pushChanges>false</pushChanges>
+					<mavenExecutorId>forked-path</mavenExecutorId>
 				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.maven.scm</groupId>
+						<artifactId>maven-scm-provider-gitexe</artifactId>
+						<version>${maven-scm-provider-gitexe.version}</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>${maven-deploy-plugin.version}</version>
+				<executions>
+					<execution>
+						<id>default-deploy</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 
 		</plugins>
@@ -251,18 +308,17 @@
 
 	<profiles>
 		<profile>
-			<id>release-sign-artifacts</id>
+			<id>signing-deploy</id>
 			<activation>
 				<property>
-					<name>performRelease</name>
-					<value>true</value>
+					<name>gpg.passphrase</name>
 				</property>
 			</activation>
 			<build>
 				<plugins>
 					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-gpg-plugin</artifactId>
+						<version>${maven-gpg-plugin.version}</version>
 						<executions>
 							<execution>
 								<id>sign-artifacts</id>
@@ -270,6 +326,13 @@
 								<goals>
 									<goal>sign</goal>
 								</goals>
+								<configuration>
+									<!-- This is necessary for gpg to not try to use the pinentry programs -->
+									<gpgArguments>
+										<arg>--pinentry-mode</arg>
+										<arg>loopback</arg>
+									</gpgArguments>
+								</configuration>
 							</execution>
 						</executions>
 					</plugin>
@@ -278,7 +341,10 @@
 		</profile>
 
 		<profile>
-			<id>release</id>
+			<id>deploy</id>
+			<activation>
+				<jdk>[1.6,)</jdk>
+			</activation>
 			<build>
 				<plugins>
 					<plugin>
@@ -296,7 +362,7 @@
 						<artifactId>maven-javadoc-plugin</artifactId>
 						<executions>
 							<execution>
-								<id>attach-javadocs</id>
+								<id>attach-javadoc</id>
 								<goals>
 									<goal>jar</goal>
 								</goals>
@@ -309,10 +375,14 @@
 	</profiles>
 
 	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
 		<repository>
-			<id>internal.repo</id>
-			<name>Temporary Staging Repository</name>
-			<url>file://${project.build.directory}/mvn-repo</url>
+			<id>ossrh</id>
+			<name>Central Repository OSSRH</name>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
 		</repository>
 	</distributionManagement>
 </project>

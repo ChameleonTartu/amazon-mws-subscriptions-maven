@@ -77,7 +77,6 @@ public class Subscription extends AbstractMwsObject {
      *
      * @param notificationType
      *             The new value to set.
-     *
      * @return This instance.
      */
     public Subscription withNotificationType(String notificationType) {
@@ -118,7 +117,6 @@ public class Subscription extends AbstractMwsObject {
      *
      * @param destination
      *             The new value to set.
-     *
      * @return This instance.
      */
     public Subscription withDestination(Destination destination) {
@@ -159,7 +157,6 @@ public class Subscription extends AbstractMwsObject {
      *
      * @param isEnabled
      *             The new value to set.
-     *
      * @return This instance.
      */
     public Subscription withIsEnabled(boolean isEnabled) {
@@ -168,10 +165,9 @@ public class Subscription extends AbstractMwsObject {
     }
 
     /**
-     * Read members from a MwsReader.
+     * {@inheritDoc}
      *
-     * @param r
-     *      The reader to read from.
+     * Read members from a MwsReader.
      */
     @Override
     public void readFragmentFrom(MwsReader r) {
@@ -181,10 +177,9 @@ public class Subscription extends AbstractMwsObject {
     }
 
     /**
-     * Write members to a MwsWriter.
+     * {@inheritDoc}
      *
-     * @param w
-     *      The writer to write to.
+     * Write members to a MwsWriter.
      */
     @Override
     public void writeFragmentTo(MwsWriter w) {
@@ -194,17 +189,22 @@ public class Subscription extends AbstractMwsObject {
     }
 
     /**
-     * Write tag, xmlns and members to a MwsWriter.
+     * {@inheritDoc}
      *
-     * @param w
-     *         The Writer to write to.
+     * Write tag, xmlns and members to a MwsWriter.
      */
     @Override
     public void writeTo(MwsWriter w) {
         w.write("http://mws.amazonservices.com/schema/Subscriptions/2013-07-01", "Subscription",this);
     }
 
-    /** Value constructor. */
+    /**
+     * Value constructor.
+     *
+     * @param notificationType a {@link java.lang.String} object.
+     * @param destination a {@link com.amazonservices.mws.subscriptions.model.Destination} object.
+     * @param isEnabled a boolean.
+     */
     public Subscription(String notificationType,Destination destination,boolean isEnabled) {
         this.notificationType = notificationType;
         this.destination = destination;
@@ -212,7 +212,9 @@ public class Subscription extends AbstractMwsObject {
     }    
     
 
-    /** Default constructor. */
+    /**
+     * Default constructor.
+     */
     public Subscription() {
         super();
     }

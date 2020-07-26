@@ -76,7 +76,6 @@ public class CreateSubscriptionResponse extends AbstractMwsObject implements MWS
      *
      * @param createSubscriptionResult
      *             The new value to set.
-     *
      * @return This instance.
      */
     public CreateSubscriptionResponse withCreateSubscriptionResult(CreateSubscriptionResult createSubscriptionResult) {
@@ -117,7 +116,6 @@ public class CreateSubscriptionResponse extends AbstractMwsObject implements MWS
      *
      * @param responseMetadata
      *             The new value to set.
-     *
      * @return This instance.
      */
     public CreateSubscriptionResponse withResponseMetadata(ResponseMetadata responseMetadata) {
@@ -135,10 +133,9 @@ public class CreateSubscriptionResponse extends AbstractMwsObject implements MWS
     }
 
     /**
-     * Set the value of ResponseHeaderMetadata.
+     * {@inheritDoc}
      *
-     * @param responseHeaderMetadata
-     *            The new value to set.
+     * Set the value of ResponseHeaderMetadata.
      */
     public void setResponseHeaderMetadata(ResponseHeaderMetadata responseHeaderMetadata) {
         this.responseHeaderMetadata = responseHeaderMetadata;
@@ -158,7 +155,6 @@ public class CreateSubscriptionResponse extends AbstractMwsObject implements MWS
      *
      * @param responseHeaderMetadata
      *             The new value to set.
-     *
      * @return This instance.
      */
     public CreateSubscriptionResponse withResponseHeaderMetadata(ResponseHeaderMetadata responseHeaderMetadata) {
@@ -167,10 +163,9 @@ public class CreateSubscriptionResponse extends AbstractMwsObject implements MWS
     }
 
     /**
-     * Read members from a MwsReader.
+     * {@inheritDoc}
      *
-     * @param r
-     *      The reader to read from.
+     * Read members from a MwsReader.
      */
     @Override
     public void readFragmentFrom(MwsReader r) {
@@ -179,10 +174,9 @@ public class CreateSubscriptionResponse extends AbstractMwsObject implements MWS
     }
 
     /**
-     * Write members to a MwsWriter.
+     * {@inheritDoc}
      *
-     * @param w
-     *      The writer to write to.
+     * Write members to a MwsWriter.
      */
     @Override
     public void writeFragmentTo(MwsWriter w) {
@@ -191,24 +185,30 @@ public class CreateSubscriptionResponse extends AbstractMwsObject implements MWS
     }
 
     /**
-     * Write tag, xmlns and members to a MwsWriter.
+     * {@inheritDoc}
      *
-     * @param w
-     *         The Writer to write to.
+     * Write tag, xmlns and members to a MwsWriter.
      */
     @Override
     public void writeTo(MwsWriter w) {
         w.write("http://mws.amazonservices.com/schema/Subscriptions/2013-07-01", "CreateSubscriptionResponse",this);
     }
 
-    /** Value constructor. */
+    /**
+     * Value constructor.
+     *
+     * @param createSubscriptionResult a {@link com.amazonservices.mws.subscriptions.model.CreateSubscriptionResult} object.
+     * @param responseMetadata a {@link com.amazonservices.mws.subscriptions.model.ResponseMetadata} object.
+     */
     public CreateSubscriptionResponse(CreateSubscriptionResult createSubscriptionResult,ResponseMetadata responseMetadata) {
         this.createSubscriptionResult = createSubscriptionResult;
         this.responseMetadata = responseMetadata;
     }    
     
 
-    /** Default constructor. */
+    /**
+     * Default constructor.
+     */
     public CreateSubscriptionResponse() {
         super();
     }

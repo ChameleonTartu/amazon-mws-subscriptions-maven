@@ -44,7 +44,7 @@ public class MWSSubscriptionsServiceMock
     /**
      * Create a future that will immediately return the given response.
      *
-     * @param response
+     * @param response {@code T} generic type
      *
      * @return Future
      */
@@ -62,7 +62,7 @@ public class MWSSubscriptionsServiceMock
     /**
      * Create a new response object.
      * 
-     * @param cls
+     * @param cls {@code Class<T>} class of generic type
      * 
      * @return The object.
      */

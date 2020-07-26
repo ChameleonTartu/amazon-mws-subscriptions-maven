@@ -36,30 +36,27 @@ import com.amazonservices.mws.client.*;
 public class UpdateSubscriptionResult extends AbstractMwsObject {
 
     /**
-     * Read members from a MwsReader.
+     * {@inheritDoc}
      *
-     * @param r
-     *      The reader to read from.
+     * Read members from a MwsReader.
      */
     @Override
     public void readFragmentFrom(MwsReader r) {
     }
 
     /**
-     * Write members to a MwsWriter.
+     * {@inheritDoc}
      *
-     * @param w
-     *      The writer to write to.
+     * Write members to a MwsWriter.
      */
     @Override
     public void writeFragmentTo(MwsWriter w) {
     }
 
     /**
-     * Write tag, xmlns and members to a MwsWriter.
+     * {@inheritDoc}
      *
-     * @param w
-     *         The Writer to write to.
+     * Write tag, xmlns and members to a MwsWriter.
      */
     @Override
     public void writeTo(MwsWriter w) {
@@ -67,7 +64,9 @@ public class UpdateSubscriptionResult extends AbstractMwsObject {
     }
 
 
-    /** Default constructor. */
+    /**
+     * Default constructor.
+     */
     public UpdateSubscriptionResult() {
         super();
     }

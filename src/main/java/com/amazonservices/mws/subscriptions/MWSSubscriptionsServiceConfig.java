@@ -51,15 +51,31 @@ public class MWSSubscriptionsServiceConfig {
         return cc.getMaxConnections();
     }
     
+    /**
+     * <p>setMaxConnections.</p>
+     *
+     * @param maxConnections a int.
+     */
     public void setMaxConnections(int maxConnections) {
         cc.setMaxConnections(maxConnections);
     }
 
+    /**
+     * <p>withMaxConnections.</p>
+     *
+     * @param maxConnections a int.
+     * @return a {@link com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceConfig} object.
+     */
     public MWSSubscriptionsServiceConfig withMaxConnections(int maxConnections) {
         cc.setMaxConnections(maxConnections);
         return this;
     }
 
+    /**
+     * <p>isSetMaxConnections.</p>
+     *
+     * @return a boolean.
+     */
     public boolean isSetMaxConnections() {
         return cc.getMaxConnections() > 0;
     }
@@ -74,15 +90,31 @@ public class MWSSubscriptionsServiceConfig {
         return cc.getMaxErrorRetry();
     }
     
+    /**
+     * <p>setMaxErrorRetry.</p>
+     *
+     * @param maxErrorRetry a int.
+     */
     public void setMaxErrorRetry(int maxErrorRetry) {
         cc.setMaxErrorRetry(maxErrorRetry);
     }
 
+    /**
+     * <p>withMaxErrorRetry.</p>
+     *
+     * @param maxErrorRetry a int.
+     * @return a {@link com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceConfig} object.
+     */
     public MWSSubscriptionsServiceConfig withMaxErrorRetry(int maxErrorRetry) {
         cc.setMaxErrorRetry(maxErrorRetry);
         return this;
     }
 
+    /**
+     * <p>isSetMaxErrorRetry.</p>
+     *
+     * @return a boolean.
+     */
     public boolean isSetMaxErrorRetry() {
         return cc.getMaxErrorRetry() > 0;
     }
@@ -96,15 +128,31 @@ public class MWSSubscriptionsServiceConfig {
         return cc.getProxyHost();
     }
     
+    /**
+     * <p>setProxyHost.</p>
+     *
+     * @param proxyHost a {@link java.lang.String} object.
+     */
     public void setProxyHost(String proxyHost) {
         cc.setProxyHost(proxyHost);
     }
 
+    /**
+     * <p>withProxyHost.</p>
+     *
+     * @param proxyHost a {@link java.lang.String} object.
+     * @return a {@link com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceConfig} object.
+     */
     public MWSSubscriptionsServiceConfig withProxyHost(String proxyHost) {
         cc.setProxyHost(proxyHost);
         return this;
     }
 
+    /**
+     * <p>isSetProxyHost.</p>
+     *
+     * @return a boolean.
+     */
     public boolean isSetProxyHost() {
         return cc.getProxyHost() != null;
     }
@@ -118,15 +166,31 @@ public class MWSSubscriptionsServiceConfig {
         return cc.getProxyPassword();
     }
     
+    /**
+     * <p>setProxyPassword.</p>
+     *
+     * @param proxyPassword a {@link java.lang.String} object.
+     */
     public void setProxyPassword(String proxyPassword) {
         cc.setProxyPassword(proxyPassword);
     }
 
+    /**
+     * <p>withProxyPassword.</p>
+     *
+     * @param proxyPassword a {@link java.lang.String} object.
+     * @return a {@link com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceConfig} object.
+     */
     public MWSSubscriptionsServiceConfig withProxyPassword(String proxyPassword) {
         cc.setProxyPassword(proxyPassword);
         return this;
     }
 
+    /**
+     * <p>isSetProxyPassword.</p>
+     *
+     * @return a boolean.
+     */
     public boolean isSetProxyPassword() {
         return cc.getProxyPassword() != null;
     }
@@ -140,15 +204,31 @@ public class MWSSubscriptionsServiceConfig {
         return cc.getProxyPort();
     }
     
+     /**
+      * <p>setProxyPort.</p>
+      *
+      * @param proxyPort a int.
+      */
      public void setProxyPort(int proxyPort) {
         cc.setProxyPort(proxyPort);
     }
 
+    /**
+     * <p>withProxyPort.</p>
+     *
+     * @param proxyPort a int.
+     * @return a {@link com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceConfig} object.
+     */
     public MWSSubscriptionsServiceConfig withProxyPort(int proxyPort) {
         cc.setProxyPort(proxyPort);
         return this;
     }
 
+    /**
+     * <p>isSetProxyPort.</p>
+     *
+     * @return a boolean.
+     */
     public boolean isSetProxyPort() {
         return cc.getProxyPort() != -1;
     }
@@ -162,41 +242,78 @@ public class MWSSubscriptionsServiceConfig {
         return cc.getProxyUsername();
     }
     
+    /**
+     * <p>setProxyUsername.</p>
+     *
+     * @param proxyUsername a {@link java.lang.String} object.
+     */
     public void setProxyUsername(String proxyUsername) {
         cc.setProxyUsername(proxyUsername);
     }
 
+    /**
+     * <p>withProxyUsername.</p>
+     *
+     * @param proxyUsername a {@link java.lang.String} object.
+     * @return a {@link com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceConfig} object.
+     */
     public MWSSubscriptionsServiceConfig withProxyUsername(String proxyUsername) {
         cc.setProxyUsername(proxyUsername);
         return this;
     }
 
+    /**
+     * <p>isSetProxyUsername.</p>
+     *
+     * @return a boolean.
+     */
     public boolean isSetProxyUsername() {
         return cc.getProxyUsername() != null;
     }
 
+    /**
+     * <p>getServiceVersion.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getServiceVersion() {
         return "2013-07-01";
     }
 
-	/**
-	 * Gets the SignatureVersion property
-	 *
-	 * @return Signature Version
-	 */
+    /**
+     * Gets the SignatureVersion property
+     *
+     * @return Signature Version
+     */
     public String getSignatureVersion() {
         return cc.getSignatureVersion();
     }
 
+    /**
+     * <p>setSignatureVersion.</p>
+     *
+     * @param signatureVersion a {@link java.lang.String} object.
+     */
     public void setSignatureVersion(String signatureVersion) {
         cc.setSignatureVersion(signatureVersion);
     }
 
+    /**
+     * <p>withSignatureVersion.</p>
+     *
+     * @param signatureVersion a {@link java.lang.String} object.
+     * @return a {@link com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceConfig} object.
+     */
     public MWSSubscriptionsServiceConfig withSignatureVersion(String signatureVersion) {
         cc.setSignatureVersion(signatureVersion);
         return this;
     }
 
+    /**
+     * <p>isSetSignatureVersion.</p>
+     *
+     * @return a boolean.
+     */
     public boolean isSetSignatureVersion() {
         return true;
     }
@@ -210,34 +327,77 @@ public class MWSSubscriptionsServiceConfig {
         return cc.getSignatureMethod();
     }
 
+    /**
+     * <p>setSignatureMethod.</p>
+     *
+     * @param signatureMethod a {@link java.lang.String} object.
+     */
     public void setSignatureMethod(String signatureMethod) {
         cc.setSignatureMethod(signatureMethod);
     }
 
+    /**
+     * <p>withSignatureMethod.</p>
+     *
+     * @param signatureMethod a {@link java.lang.String} object.
+     * @return a {@link com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceConfig} object.
+     */
     public MWSSubscriptionsServiceConfig withSignatureMethod(String signatureMethod) {
         cc.setSignatureMethod(signatureMethod);
         return this;
     }
 
+    /**
+     * <p>isSetSignatureMethod.</p>
+     *
+     * @return a boolean.
+     */
     public boolean isSetSignatureMethod() {
         return true;
     }
 
+    /**
+     * <p>getUserAgent.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getUserAgent() {
         return cc.getUserAgent();
     }
 
+    /**
+     * <p>setUserAgent.</p>
+     *
+     * @param applicationName a {@link java.lang.String} object.
+     * @param applicationVersion a {@link java.lang.String} object.
+     * @param programmingLanguage a {@link java.lang.String} object.
+     * @param additionalNameValuePairs a {@link java.lang.String} object.
+     */
     public void setUserAgent(String applicationName, String applicationVersion, String programmingLanguage,
             String... additionalNameValuePairs) {
         cc.setUserAgent(applicationName,applicationVersion,programmingLanguage,additionalNameValuePairs);
     }
 
+    /**
+     * <p>withUserAgent.</p>
+     *
+     * @param applicationName a {@link java.lang.String} object.
+     * @param applicationVersion a {@link java.lang.String} object.
+     * @param programmingLanguage a {@link java.lang.String} object.
+     * @param additionalNameValuePairs a {@link java.lang.String} object.
+     * @return a {@link com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceConfig} object.
+     */
     public MWSSubscriptionsServiceConfig withUserAgent(String applicationName, String applicationVersion,
         String programmingLanguage, String... additionalNameValuePairs) {
         cc.setUserAgent(applicationName, applicationVersion, programmingLanguage, additionalNameValuePairs);
         return this;
     }
 
+    /**
+     * <p>isSetUserAgent.</p>
+     *
+     * @return a boolean.
+     */
     public boolean isSetUserAgent() {
         return cc.getUserAgent() != null;
     }
@@ -251,6 +411,11 @@ public class MWSSubscriptionsServiceConfig {
         return servicePath;
     }
     
+    /**
+     * <p>getServiceURL.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getServiceURL() {
         return cc.getEndpoint().toString() + "/" + servicePath;
     }
@@ -283,11 +448,22 @@ public class MWSSubscriptionsServiceConfig {
         }
     }
 
+    /**
+     * <p>withServiceURL.</p>
+     *
+     * @param aserviceUrl a {@link java.lang.String} object.
+     * @return a {@link com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceConfig} object.
+     */
     public MWSSubscriptionsServiceConfig withServiceURL(String aserviceUrl) {
         setServiceURL(aserviceUrl);
         return this;
     }
 
+    /**
+     * <p>isSetServiceURL.</p>
+     *
+     * @return a boolean.
+     */
     public boolean isSetServiceURL() {
         return servicePath != null;
     }
@@ -304,15 +480,31 @@ public class MWSSubscriptionsServiceConfig {
         return cc.getMaxAsyncQueueSize();
     }
     
+    /**
+     * <p>setMaxAsyncQueueSize.</p>
+     *
+     * @param size a int.
+     */
     public void setMaxAsyncQueueSize(int size) {
         cc.setMaxAsyncQueueSize(size);
     }
     
+    /**
+     * <p>withMaxAsyncQueueSize.</p>
+     *
+     * @param size a int.
+     * @return a {@link com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceConfig} object.
+     */
     public MWSSubscriptionsServiceConfig withMaxAsyncQueueSize(int size) {
         cc.setMaxAsyncQueueSize(size);
         return this;
     }
 
+    /**
+     * <p>isSetMaxAsyncQueueSize.</p>
+     *
+     * @return a boolean.
+     */
     public boolean isSetMaxAsyncQueueSize() {
        return cc.getMaxAsyncQueueSize()>0;
     }
@@ -328,15 +520,31 @@ public class MWSSubscriptionsServiceConfig {
         return cc.getMaxAsyncThreads();
     }
 
+    /**
+     * <p>setMaxAsyncThreads.</p>
+     *
+     * @param threads a int.
+     */
     public void setMaxAsyncThreads(int threads) {
         cc.setMaxAsyncThreads(threads);
     }
 
+    /**
+     * <p>withMaxAsyncThreads.</p>
+     *
+     * @param threads a int.
+     * @return a {@link com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceConfig} object.
+     */
     public MWSSubscriptionsServiceConfig withMaxAsyncThreads(int threads) {
         cc.setMaxAsyncThreads(threads);
         return this;
     }
 
+    /**
+     * <p>isSetMaxAsyncThreads.</p>
+     *
+     * @return a boolean.
+     */
     public boolean isSetMaxAsyncThreads() {
        return cc.getMaxAsyncThreads()>0;
     }

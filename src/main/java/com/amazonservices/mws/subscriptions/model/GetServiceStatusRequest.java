@@ -74,7 +74,6 @@ public class GetServiceStatusRequest extends AbstractMwsObject {
      *
      * @param sellerId
      *             The new value to set.
-     *
      * @return This instance.
      */
     public GetServiceStatusRequest withSellerId(String sellerId) {
@@ -115,7 +114,6 @@ public class GetServiceStatusRequest extends AbstractMwsObject {
      *
      * @param mwsAuthToken
      *             The new value to set.
-     *
      * @return This instance.
      */
     public GetServiceStatusRequest withMWSAuthToken(String mwsAuthToken) {
@@ -124,10 +122,9 @@ public class GetServiceStatusRequest extends AbstractMwsObject {
     }
 
     /**
-     * Read members from a MwsReader.
+     * {@inheritDoc}
      *
-     * @param r
-     *      The reader to read from.
+     * Read members from a MwsReader.
      */
     @Override
     public void readFragmentFrom(MwsReader r) {
@@ -136,10 +133,9 @@ public class GetServiceStatusRequest extends AbstractMwsObject {
     }
 
     /**
-     * Write members to a MwsWriter.
+     * {@inheritDoc}
      *
-     * @param w
-     *      The writer to write to.
+     * Write members to a MwsWriter.
      */
     @Override
     public void writeFragmentTo(MwsWriter w) {
@@ -148,29 +144,39 @@ public class GetServiceStatusRequest extends AbstractMwsObject {
     }
 
     /**
-     * Write tag, xmlns and members to a MwsWriter.
+     * {@inheritDoc}
      *
-     * @param w
-     *         The Writer to write to.
+     * Write tag, xmlns and members to a MwsWriter.
      */
     @Override
     public void writeTo(MwsWriter w) {
         w.write("http://mws.amazonservices.com/schema/Subscriptions/2013-07-01", "GetServiceStatusRequest",this);
     }
 
-    /** Value constructor. */
+    /**
+     * Value constructor.
+     *
+     * @param sellerId a {@link java.lang.String} object.
+     * @param mwsAuthToken a {@link java.lang.String} object.
+     */
     public GetServiceStatusRequest(String sellerId,String mwsAuthToken) {
         this.sellerId = sellerId;
         this.mwsAuthToken = mwsAuthToken;
     }    
 
-    /** Legacy value constructor. */
+    /**
+     * Legacy value constructor.
+     *
+     * @param sellerId a {@link java.lang.String} object.
+     */
     public GetServiceStatusRequest(String sellerId) {
         this.sellerId = sellerId;
     }
     
 
-    /** Default constructor. */
+    /**
+     * Default constructor.
+     */
     public GetServiceStatusRequest() {
         super();
     }

@@ -31,8 +31,7 @@ public interface MWSSubscriptionsServiceAsync extends MWSSubscriptionsService {
      *
      * @param request
      *           CreateSubscriptionInput request.
-     *
-     * @return Future<CreateSubscriptionResponse> response.
+     * @return {@code Future<CreateSubscriptionResponse>} response.
      */
     Future<CreateSubscriptionResponse> createSubscriptionAsync(
         CreateSubscriptionInput request);
@@ -44,8 +43,7 @@ public interface MWSSubscriptionsServiceAsync extends MWSSubscriptionsService {
      *
      * @param request
      *           DeleteSubscriptionInput request.
-     *
-     * @return Future<DeleteSubscriptionResponse> response.
+     * @return {@code Future<DeleteSubscriptionResponse>} response.
      */
     Future<DeleteSubscriptionResponse> deleteSubscriptionAsync(
         DeleteSubscriptionInput request);
@@ -57,8 +55,7 @@ public interface MWSSubscriptionsServiceAsync extends MWSSubscriptionsService {
      *
      * @param request
      *           DeregisterDestinationInput request.
-     *
-     * @return Future<DeregisterDestinationResponse> response.
+     * @return {@code Future<DeregisterDestinationResponse>} response.
      */
     Future<DeregisterDestinationResponse> deregisterDestinationAsync(
         DeregisterDestinationInput request);
@@ -70,8 +67,7 @@ public interface MWSSubscriptionsServiceAsync extends MWSSubscriptionsService {
      *
      * @param request
      *           GetSubscriptionInput request.
-     *
-     * @return Future<GetSubscriptionResponse> response.
+     * @return {@code Future<GetSubscriptionResponse>} response.
      */
     Future<GetSubscriptionResponse> getSubscriptionAsync(
         GetSubscriptionInput request);
@@ -83,8 +79,7 @@ public interface MWSSubscriptionsServiceAsync extends MWSSubscriptionsService {
      *
      * @param request
      *           ListRegisteredDestinationsInput request.
-     *
-     * @return Future<ListRegisteredDestinationsResponse> response.
+     * @return {@code Future<ListRegisteredDestinationsResponse>} response.
      */
     Future<ListRegisteredDestinationsResponse> listRegisteredDestinationsAsync(
         ListRegisteredDestinationsInput request);
@@ -96,8 +91,7 @@ public interface MWSSubscriptionsServiceAsync extends MWSSubscriptionsService {
      *
      * @param request
      *           ListSubscriptionsInput request.
-     *
-     * @return Future<ListSubscriptionsResponse> response.
+     * @return {@code Future<ListSubscriptionsResponse>} response.
      */
     Future<ListSubscriptionsResponse> listSubscriptionsAsync(
         ListSubscriptionsInput request);
@@ -109,8 +103,7 @@ public interface MWSSubscriptionsServiceAsync extends MWSSubscriptionsService {
      *
      * @param request
      *           RegisterDestinationInput request.
-     *
-     * @return Future<RegisterDestinationResponse> response.
+     * @return {@code Future<RegisterDestinationResponse>} response.
      */
     Future<RegisterDestinationResponse> registerDestinationAsync(
         RegisterDestinationInput request);
@@ -122,8 +115,7 @@ public interface MWSSubscriptionsServiceAsync extends MWSSubscriptionsService {
      *
      * @param request
      *           SendTestNotificationToDestinationInput request.
-     *
-     * @return Future<SendTestNotificationToDestinationResponse> response.
+     * @return {@code Future<SendTestNotificationToDestinationResponse>} response.
      */
     Future<SendTestNotificationToDestinationResponse> sendTestNotificationToDestinationAsync(
         SendTestNotificationToDestinationInput request);
@@ -135,8 +127,7 @@ public interface MWSSubscriptionsServiceAsync extends MWSSubscriptionsService {
      *
      * @param request
      *           UpdateSubscriptionInput request.
-     *
-     * @return Future<UpdateSubscriptionResponse> response.
+     * @return {@code Future<UpdateSubscriptionResponse>} response.
      */
     Future<UpdateSubscriptionResponse> updateSubscriptionAsync(
         UpdateSubscriptionInput request);
@@ -144,12 +135,9 @@ public interface MWSSubscriptionsServiceAsync extends MWSSubscriptionsService {
     /**
      * Get Service Status
      *
-     * 
-     *
      * @param request
      *           GetServiceStatusRequest request.
-     *
-     * @return Future<GetServiceStatusResponse> response.
+     * @return {@code Future<GetServiceStatusResponse>} response.
      */
     Future<GetServiceStatusResponse> getServiceStatusAsync(
         GetServiceStatusRequest request);

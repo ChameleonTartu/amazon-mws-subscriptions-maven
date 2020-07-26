@@ -71,7 +71,6 @@ public class ResponseMetadata extends AbstractMwsObject {
      *
      * @param requestId
      *             The new value to set.
-     *
      * @return This instance.
      */
     public ResponseMetadata withRequestId(String requestId) {
@@ -80,10 +79,9 @@ public class ResponseMetadata extends AbstractMwsObject {
     }
 
     /**
-     * Read members from a MwsReader.
+     * {@inheritDoc}
      *
-     * @param r
-     *      The reader to read from.
+     * Read members from a MwsReader.
      */
     @Override
     public void readFragmentFrom(MwsReader r) {
@@ -91,10 +89,9 @@ public class ResponseMetadata extends AbstractMwsObject {
     }
 
     /**
-     * Write members to a MwsWriter.
+     * {@inheritDoc}
      *
-     * @param w
-     *      The writer to write to.
+     * Write members to a MwsWriter.
      */
     @Override
     public void writeFragmentTo(MwsWriter w) {
@@ -102,23 +99,28 @@ public class ResponseMetadata extends AbstractMwsObject {
     }
 
     /**
-     * Write tag, xmlns and members to a MwsWriter.
+     * {@inheritDoc}
      *
-     * @param w
-     *         The Writer to write to.
+     * Write tag, xmlns and members to a MwsWriter.
      */
     @Override
     public void writeTo(MwsWriter w) {
         w.write("http://mws.amazonservices.com/schema/Subscriptions/2013-07-01", "ResponseMetadata",this);
     }
 
-    /** Value constructor. */
+    /**
+     * Value constructor.
+     *
+     * @param requestId a {@link java.lang.String} object.
+     */
     public ResponseMetadata(String requestId) {
         this.requestId = requestId;
     }    
     
 
-    /** Default constructor. */
+    /**
+     * Default constructor.
+     */
     public ResponseMetadata() {
         super();
     }

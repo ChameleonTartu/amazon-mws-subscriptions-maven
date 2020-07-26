@@ -20,8 +20,21 @@ import java.util.concurrent.Future;
 
 import com.amazonservices.mws.subscriptions.model.*;
 
+/**
+ * <p>MWSSubscriptionsServiceAsyncClient class.</p>
+ */
 public class MWSSubscriptionsServiceAsyncClient extends MWSSubscriptionsServiceClient implements MWSSubscriptionsServiceAsync {
 
+    /**
+     * <p>Constructor for MWSSubscriptionsServiceAsyncClient.</p>
+     *
+     * @param accessKey a {@link java.lang.String} object.
+     * @param secretKey a {@link java.lang.String} object.
+     * @param applicationName a {@link java.lang.String} object.
+     * @param applicationVersion a {@link java.lang.String} object.
+     * @param config a {@link com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceConfig} object.
+     * @param executor a {@link java.util.concurrent.ExecutorService} object.
+     */
     public MWSSubscriptionsServiceAsyncClient(
             String accessKey,
             String secretKey,
@@ -33,6 +46,15 @@ public class MWSSubscriptionsServiceAsyncClient extends MWSSubscriptionsServiceC
         connection.setExecutorService(executor);
     }
 
+    /**
+     * <p>Constructor for MWSSubscriptionsServiceAsyncClient.</p>
+     *
+     * @param accessKey a {@link java.lang.String} object.
+     * @param secretKey a {@link java.lang.String} object.
+     * @param applicationName a {@link java.lang.String} object.
+     * @param applicationVersion a {@link java.lang.String} object.
+     * @param config a {@link com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceConfig} object.
+     */
     public MWSSubscriptionsServiceAsyncClient(
             String accessKey,
             String secretKey,
@@ -42,6 +64,13 @@ public class MWSSubscriptionsServiceAsyncClient extends MWSSubscriptionsServiceC
         super(accessKey, secretKey, applicationName, applicationVersion, config);
     }
 
+    /**
+     * <p>Constructor for MWSSubscriptionsServiceAsyncClient.</p>
+     *
+     * @param accessKey a {@link java.lang.String} object.
+     * @param secretKey a {@link java.lang.String} object.
+     * @param config a {@link com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceConfig} object.
+     */
     public MWSSubscriptionsServiceAsyncClient(
             String accessKey,
             String secretKey,
@@ -49,6 +78,14 @@ public class MWSSubscriptionsServiceAsyncClient extends MWSSubscriptionsServiceC
         super(accessKey, secretKey, config);
     }
 
+    /**
+     * <p>Constructor for MWSSubscriptionsServiceAsyncClient.</p>
+     *
+     * @param accessKey a {@link java.lang.String} object.
+     * @param secretKey a {@link java.lang.String} object.
+     * @param applicationName a {@link java.lang.String} object.
+     * @param applicationVersion a {@link java.lang.String} object.
+     */
     public MWSSubscriptionsServiceAsyncClient(
             String accessKey,
             String secretKey,
@@ -57,6 +94,7 @@ public class MWSSubscriptionsServiceAsyncClient extends MWSSubscriptionsServiceC
         super(accessKey, secretKey, applicationName, applicationVersion);
     }
 
+    /** {@inheritDoc} */
     public Future<CreateSubscriptionResponse> createSubscriptionAsync(
         CreateSubscriptionInput request) {
         return connection.callAsync(
@@ -64,6 +102,7 @@ public class MWSSubscriptionsServiceAsyncClient extends MWSSubscriptionsServiceC
             request);
     }
 
+    /** {@inheritDoc} */
     public Future<DeleteSubscriptionResponse> deleteSubscriptionAsync(
         DeleteSubscriptionInput request) {
         return connection.callAsync(
@@ -71,6 +110,7 @@ public class MWSSubscriptionsServiceAsyncClient extends MWSSubscriptionsServiceC
             request);
     }
 
+    /** {@inheritDoc} */
     public Future<DeregisterDestinationResponse> deregisterDestinationAsync(
         DeregisterDestinationInput request) {
         return connection.callAsync(
@@ -78,6 +118,7 @@ public class MWSSubscriptionsServiceAsyncClient extends MWSSubscriptionsServiceC
             request);
     }
 
+    /** {@inheritDoc} */
     public Future<GetSubscriptionResponse> getSubscriptionAsync(
         GetSubscriptionInput request) {
         return connection.callAsync(
@@ -85,6 +126,7 @@ public class MWSSubscriptionsServiceAsyncClient extends MWSSubscriptionsServiceC
             request);
     }
 
+    /** {@inheritDoc} */
     public Future<ListRegisteredDestinationsResponse> listRegisteredDestinationsAsync(
         ListRegisteredDestinationsInput request) {
         return connection.callAsync(
@@ -92,6 +134,7 @@ public class MWSSubscriptionsServiceAsyncClient extends MWSSubscriptionsServiceC
             request);
     }
 
+    /** {@inheritDoc} */
     public Future<ListSubscriptionsResponse> listSubscriptionsAsync(
         ListSubscriptionsInput request) {
         return connection.callAsync(
@@ -99,6 +142,7 @@ public class MWSSubscriptionsServiceAsyncClient extends MWSSubscriptionsServiceC
             request);
     }
 
+    /** {@inheritDoc} */
     public Future<RegisterDestinationResponse> registerDestinationAsync(
         RegisterDestinationInput request) {
         return connection.callAsync(
@@ -106,6 +150,7 @@ public class MWSSubscriptionsServiceAsyncClient extends MWSSubscriptionsServiceC
             request);
     }
 
+    /** {@inheritDoc} */
     public Future<SendTestNotificationToDestinationResponse> sendTestNotificationToDestinationAsync(
         SendTestNotificationToDestinationInput request) {
         return connection.callAsync(
@@ -113,6 +158,7 @@ public class MWSSubscriptionsServiceAsyncClient extends MWSSubscriptionsServiceC
             request);
     }
 
+    /** {@inheritDoc} */
     public Future<UpdateSubscriptionResponse> updateSubscriptionAsync(
         UpdateSubscriptionInput request) {
         return connection.callAsync(
@@ -120,6 +166,7 @@ public class MWSSubscriptionsServiceAsyncClient extends MWSSubscriptionsServiceC
             request);
     }
 
+    /** {@inheritDoc} */
     public Future<GetServiceStatusResponse> getServiceStatusAsync(
         GetServiceStatusRequest request) {
         return connection.callAsync(

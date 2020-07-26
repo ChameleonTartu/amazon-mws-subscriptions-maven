@@ -30,10 +30,8 @@ public interface MWSSubscriptionsService {
      *
      * @param request
      *           CreateSubscriptionInput request.
-     *
      * @return CreateSubscriptionResponse response.
-     *
-     * @throws MWSSubscriptionsServiceException
+     * @throws com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceException if any.
      */
     CreateSubscriptionResponse createSubscription(
         CreateSubscriptionInput request)
@@ -46,10 +44,8 @@ public interface MWSSubscriptionsService {
      *
      * @param request
      *           DeleteSubscriptionInput request.
-     *
      * @return DeleteSubscriptionResponse response.
-     *
-     * @throws MWSSubscriptionsServiceException
+     * @throws com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceException if any.
      */
     DeleteSubscriptionResponse deleteSubscription(
         DeleteSubscriptionInput request)
@@ -62,10 +58,8 @@ public interface MWSSubscriptionsService {
      *
      * @param request
      *           DeregisterDestinationInput request.
-     *
      * @return DeregisterDestinationResponse response.
-     *
-     * @throws MWSSubscriptionsServiceException
+     * @throws com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceException if any.
      */
     DeregisterDestinationResponse deregisterDestination(
         DeregisterDestinationInput request)
@@ -78,10 +72,8 @@ public interface MWSSubscriptionsService {
      *
      * @param request
      *           GetSubscriptionInput request.
-     *
      * @return GetSubscriptionResponse response.
-     *
-     * @throws MWSSubscriptionsServiceException
+     * @throws com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceException if any.
      */
     GetSubscriptionResponse getSubscription(
         GetSubscriptionInput request)
@@ -94,10 +86,8 @@ public interface MWSSubscriptionsService {
      *
      * @param request
      *           ListRegisteredDestinationsInput request.
-     *
      * @return ListRegisteredDestinationsResponse response.
-     *
-     * @throws MWSSubscriptionsServiceException
+     * @throws com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceException if any.
      */
     ListRegisteredDestinationsResponse listRegisteredDestinations(
         ListRegisteredDestinationsInput request)
@@ -110,10 +100,8 @@ public interface MWSSubscriptionsService {
      *
      * @param request
      *           ListSubscriptionsInput request.
-     *
      * @return ListSubscriptionsResponse response.
-     *
-     * @throws MWSSubscriptionsServiceException
+     * @throws com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceException if any.
      */
     ListSubscriptionsResponse listSubscriptions(
         ListSubscriptionsInput request)
@@ -126,10 +114,8 @@ public interface MWSSubscriptionsService {
      *
      * @param request
      *           RegisterDestinationInput request.
-     *
      * @return RegisterDestinationResponse response.
-     *
-     * @throws MWSSubscriptionsServiceException
+     * @throws com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceException if any.
      */
     RegisterDestinationResponse registerDestination(
         RegisterDestinationInput request)
@@ -142,10 +128,8 @@ public interface MWSSubscriptionsService {
      *
      * @param request
      *           SendTestNotificationToDestinationInput request.
-     *
      * @return SendTestNotificationToDestinationResponse response.
-     *
-     * @throws MWSSubscriptionsServiceException
+     * @throws com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceException if any.
      */
     SendTestNotificationToDestinationResponse sendTestNotificationToDestination(
         SendTestNotificationToDestinationInput request)
@@ -158,10 +142,8 @@ public interface MWSSubscriptionsService {
      *
      * @param request
      *           UpdateSubscriptionInput request.
-     *
      * @return UpdateSubscriptionResponse response.
-     *
-     * @throws MWSSubscriptionsServiceException
+     * @throws com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceException if any.
      */
     UpdateSubscriptionResponse updateSubscription(
         UpdateSubscriptionInput request)
@@ -170,14 +152,10 @@ public interface MWSSubscriptionsService {
     /**
      * Get Service Status
      *
-     * 
-     *
      * @param request
      *           GetServiceStatusRequest request.
-     *
      * @return GetServiceStatusResponse response.
-     *
-     * @throws MWSSubscriptionsServiceException
+     * @throws com.amazonservices.mws.subscriptions.MWSSubscriptionsServiceException if any.
      */
     GetServiceStatusResponse getServiceStatus(
         GetServiceStatusRequest request)

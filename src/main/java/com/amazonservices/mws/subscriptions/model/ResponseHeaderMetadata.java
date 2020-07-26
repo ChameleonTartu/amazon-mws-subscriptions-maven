@@ -23,18 +23,33 @@ import com.amazonservices.mws.client.MwsResponseHeaderMetadata;
  */
 public class ResponseHeaderMetadata extends MwsResponseHeaderMetadata {
 
-    /** Value constructor. */
+    /**
+     * Value constructor.
+     *
+     * @param requestId a {@link java.lang.String} object.
+     * @param responseContext a {@link java.util.List} object.
+     * @param timestamp a {@link java.lang.String} object.
+     * @param quotaMax a {@link java.lang.Double} object.
+     * @param quotaRemaining a {@link java.lang.Double} object.
+     * @param quotaResetsAt a {@link java.util.Date} object.
+     */
     public ResponseHeaderMetadata(String requestId, List<String> responseContext, String timestamp,
                                   Double quotaMax, Double quotaRemaining, Date quotaResetsAt) {
         super(requestId, responseContext, timestamp, quotaMax, quotaRemaining, quotaResetsAt);
     }
 
-    /** Empty constructor. */
+    /**
+     * Empty constructor.
+     */
     public ResponseHeaderMetadata() {
         super(null, null, null, null, null, null);
     }
 
-    /** Copy constructor. */
+    /**
+     * Copy constructor.
+     *
+     * @param rhmd a {@link com.amazonservices.mws.client.MwsResponseHeaderMetadata} object.
+     */
     public ResponseHeaderMetadata(MwsResponseHeaderMetadata rhmd) {
         super(rhmd);
     }
