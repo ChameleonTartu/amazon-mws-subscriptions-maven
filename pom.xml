@@ -55,13 +55,12 @@
 
 		<!-- TODO: Continue from here -->
 
-		<commons-codec-version>1.3</commons-codec-version>
-		<commons-httpclient.version>3.0.1</commons-httpclient.version>
+		<commons-codec.version>1.14</commons-codec.version>
+		<commons-httpclient.version>3.1</commons-httpclient.version>
 		<commons-logging-api.version>1.1</commons-logging-api.version>
-		<httpclient.version>4.2</httpclient.version>
-		<httpcore.version>4.2</httpcore.version>
+		<httpclient.version>4.5.12</httpclient.version>
 		<mockito.version>1.9.5</mockito.version>
-		<junit.version>4.11</junit.version>
+		<junit.version>4.13</junit.version>
 		<httpcore.version>4.4.13</httpcore.version>
 
 		<!-- Plugins -->
@@ -93,7 +92,7 @@
 		<dependency>
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
-			<version>${commons-codec-version}</version>
+			<version>${commons-codec.version}</version>
 		</dependency>
 
 		<dependency>
