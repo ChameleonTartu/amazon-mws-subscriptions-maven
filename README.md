@@ -1,14 +1,30 @@
 # amazon-mws-subscriptions-maven
 Mavenized version of Amazon MWS Subscription API
 
+[![Hits-of-Code](https://hitsofcode.com/github/chameleontartu/amazon-mws-subscriptions-maven)](https://hitsofcode.com/view/github/chameleontartu/amazon-mws-subscriptions-maven)
 [![](https://jitpack.io/v/ChameleonTartu/amazon-mws-subscriptions-maven.svg)](https://jitpack.io/#ChameleonTartu/amazon-mws-subscriptions-maven)
+![Maven Central](https://img.shields.io/maven-central/v/com.github.chameleontartu/amazon-mws-subscriptions-maven)
 [![](https://travis-ci.org/ChameleonTartu/amazon-mws-subscriptions-maven.svg?branch=master)](https://travis-ci.org/travis-ci/travis-web)
-
 
 # How to use into Maven (pom.xml)
 
-At the moment, this library is not available at Maven Central.
-Therefore, you need to add additional repository to fetch it from.
+## Maven Central
+
+The library is published into Maven Central repository
+
+```
+<dependency>
+  <groupId>com.github.chameleontartu</groupId>
+  <artifactId>amazon-mws-subscriptions-maven</artifactId>
+  <version>1.2.0</version>
+</dependency>
+```
+
+## Jitpack
+
+If you don't want to use Maven Central you can use `jitpack.io` which is a mirror of Maven Central.
+
+You would need to add a repository to fetch it from.
 
 ```
 <repositories>
@@ -24,16 +40,7 @@ Dependency itself:
 <dependency>
     <groupId>com.github.chameleontartu</groupId>
     <artifactId>amazon-mws-subscriptions-maven</artifactId>
-    <version>1.0.0</version>
-</dependency>
-```
-
-In case you want to have the latest updates you can specify `version` as `master-SNAPSHOT`.
-```
-<dependency>
-    <groupId>com.github.chameleontartu</groupId>
-    <artifactId>amazon-mws-subscriptions-maven</artifactId>
-    <version>master-SNAPSHOT</version>
+    <version>1.2.0</version>
 </dependency>
 ```
 
@@ -41,7 +48,10 @@ In case you want to have the latest updates you can specify `version` as `master
 
 This project was inspired by [ext-lib-amazon-mws-products](https://github.com/trifonnt/ext-lib-amazon-mws-products)
 
-# Project supporter
+# Contribution
 
-This project was supported by ![](https://hiccasoft.io/static/img/hiccasoft_new.png)
+To contribute to this project feel free to submit issues and PRs as well as questions and enhancement proposals.
 
+# TODO
+
+This repo is one of the series of MWS API SDKs which I am planning to put under the same umbrella and keep them up-to-date.
