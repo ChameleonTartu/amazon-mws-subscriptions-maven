@@ -1,5 +1,5 @@
 # amazon-mws-subscriptions-maven
-Mavenized version of Amazon MWS Subscription API
+Mavenized version of Amazon MWS Subscriptions API
 
 [![Hits-of-Code](https://hitsofcode.com/github/chameleontartu/amazon-mws-subscriptions-maven)](https://hitsofcode.com/view/github/chameleontartu/amazon-mws-subscriptions-maven)
 [![Travis CI](https://travis-ci.org/ChameleonTartu/amazon-mws-subscriptions-maven.svg?branch=master)](https://travis-ci.org/ChameleonTartu/amazon-mws-subscriptions-maven)
