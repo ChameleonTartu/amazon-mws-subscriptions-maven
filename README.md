@@ -2,9 +2,9 @@
 Mavenized version of Amazon MWS Subscription API
 
 [![Hits-of-Code](https://hitsofcode.com/github/chameleontartu/amazon-mws-subscriptions-maven)](https://hitsofcode.com/view/github/chameleontartu/amazon-mws-subscriptions-maven)
-[![](https://jitpack.io/v/ChameleonTartu/amazon-mws-subscriptions-maven.svg)](https://jitpack.io/#ChameleonTartu/amazon-mws-subscriptions-maven)
+[![Travis CI](https://travis-ci.org/ChameleonTartu/amazon-mws-subscriptions-maven.svg?branch=master)](https://travis-ci.org/ChameleonTartu/amazon-mws-subscriptions-maven)
 ![Maven Central](https://img.shields.io/maven-central/v/com.github.chameleontartu/amazon-mws-subscriptions-maven)
-[![](https://travis-ci.org/ChameleonTartu/amazon-mws-subscriptions-maven.svg?branch=master)](https://travis-ci.org/travis-ci/travis-web)
+[![](https://jitpack.io/v/ChameleonTartu/amazon-mws-subscriptions-maven.svg)](https://jitpack.io/#ChameleonTartu/amazon-mws-subscriptions-maven)
 
 # How to use into Maven (pom.xml)
 
