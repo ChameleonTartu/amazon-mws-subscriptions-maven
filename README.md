@@ -46,7 +46,11 @@ Dependency itself:
 
 # Inspiration
 
-This project was inspired by [ext-lib-amazon-mws-products](https://github.com/trifonnt/ext-lib-amazon-mws-products)
+This project inspired by [ext-lib-amazon-mws-products](https://github.com/trifonnt/ext-lib-amazon-mws-products)
+
+# Docs and other MWS projects
+
+The other MWS projects that ported from Ant to Maven. See [docs](https://github.com/ChameleonTartu/amazon-mws-docs).
 
 # Contribution
 
